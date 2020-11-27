@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taller 11</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <h1>Ciclos taller </h1>
+    <h3>1) Desarrollar un algoritmo que imprima los números de 1 al 100.</h3>
+    <h4>Con while</h4>
+    <p id="alg1"></p>
+    <h4>Con For</h4>
+    <p id="alg1-2"></p>
+    <h4>Con Do while</h4>
+    <p id="alg1-3"></p>
+
+    <!-- Ejercicio 2 -->
+    <hr>
+    <h3>2) Desarrollar un algoritmo que sume n cantidad de números naturales.</h3>
+    <label for="">¿Cuantos números quieres sumar?</label>
+    <br></br>
+    <input type="number" name="" id="quantity2" onfocus="this.value=''">
+    <button onclick="calcular1()">Sumar con while</button>
+    <button onclick="calcular2()">Sumar con for</button>
+    <button onclick="calcular3()">Sumar con Do while</button>
+
+    <p id="alg2" class="result"></p>
+
+    <!-- Ejercicio 3 -->
+    <hr>
+    <h3>3) Desarrollar un algoritmo que calcule el promedio de un alumno que tiene 7 calificaciones en la materia de
+        química.</h3>
+    <p>Escribe tus calificaciones hasta el momento</p>
+    <button onclick="alg3_1()">Promedio con While</button>
+    <button onclick="alg3_2()">Promedio con For</button>
+    <button onclick="alg3_3()">Promedio con Do while</button>
+    <p id="resultAlg3" class="result"></p>
+
+    <!-- Ejercicio 4 -->
+    <hr>
+    <h3>4) Desarrollar un algoritmo que lea 10 números e imprimir solamente los números positivos. (se imprime dentro
+        del ciclo, si el usuario ingresa un número positivo se imprime, sino ingresa un número positivo, no se imprime
+        nada y se pide el número siguiente)</h3>
+
+    <button onclick="alg4_1()">Ingresar con While</button>
+    <button onclick="alg4_2()">Ingresar con For</button>
+    <button onclick="alg4_3()">Ingresar con Do while</button>
+    <p>Estos son los números positivos</p>
+    <p id="resultAlg4" class="result"></p>
+
+    <!-- Ejercicio 5 -->
+    <hr>
+    <h3>5) Desarrollar un algoritmo que lea 10 números e imprimir cuántos son positivos, cuántos negativos y cuántos
+        ceros.</h3>
+
+    <label for="">Ingresa 10 números</label>
+    <br></br>
+    <button onclick="alg5_1()">Agregar con While</button>
+    <button onclick="alg5_2()">Agregar con For</button>
+    <button onclick="alg5_3()">Agregar con Do while</button>
+    <p id="resultAlg5" class="result">Números positivos = </p>
+    <p id="resultAlg5-1" class="result">Números negativos = </p>
+    <p id="resultAlg5-2" class="result">Números iguales a 0 = </p>
+
+    <!-- Ejercicio 6 -->
+    <hr>
+    <h3>6) Desarrollar un algoritmo que calcule e imprima la tabla de multiplicar de un número cualquiera de 1 hasta 10.
+        Imprimir el multiplicando, el multiplicador y el producto. </h3>
+    <label for="">Escribe el número del que quieres ver la tabla de multiplicar</label>
+    <br></br>
+    <input type="number" name="" id="alg6" onfocus="this.value=''">
+    <button onclick="alg6_1()">Calcular con While</button>
+    <button onclick="alg6_2()">Calcular con For</button>
+    <button onclick="alg6_3()">Calcular con Do While</button>
+    <p id="resultAlg6" class="result"></p>
+
+    <!-- Ejercicio 7 -->
+    <hr>
+    <h3>7) Se tiene el nombre y la edad de 3 personas y se desea saber si dentro de ellas hay por lo menos una que sea
+        menor de edad e imprimir Un mensaje que diga “si se encontró un menor de edad” y su nombre. Sino “no hay ningún
+        menor de edad” </h3>
+    <p>Ingresa los nombres y las edades de 3 personas</p>
+    <button onclick="alg7_1()">Ingresar con While</button>
+    <button onclick="alg7_2()">Ingresar con For</button>
+    <button onclick="alg7_3()">Ingresar con Do While</button>
+
+    <!-- Ejercicio 8 -->
+    <hr>
+    <h3>8) Crea un programa que pida al usuario un código de usuario y una contraseña. Deberá repetirse hasta que el
+        código sea “1” y la contraseña sea “1234”.</h3>
+    <p>Ingresa tu usuario y tu contraseña</p>
+    <label for="">Usuario</label>
+    <input type="text" name="" id="alg7-user" onfocus="this.value=''">
+    <br></br>
+    <label for="">Contraseña</label>
+    <input type="password" name="" id="alg7-password" onfocus="this.value=''">
+    <br></br>
+    <button onclick="alg8()">Ingresar</button>
+
+    <!-- Ejercicio 9 -->
+    <hr>
+    <h3>9) Crea un programa que calcula la factorial de un nº entero y positivo.</h3>
+    <label for="">Escribe un número entero y positivo</label>
+    <br></br>
+    <input type="number" name="" id="num-alg9" onfocus="this.value=''">
+    <button onclick="alg9()">Calcular</button>
+    <p id="resultAlg9" class="result"></p>
+    <p id="resultAlg9_1" class="result"></p>
+
+    <!-- Ejercicio 10 -->
+    <hr>
+    <h3>10) Escribir un programa que realice la pregunta ¿Desea continuar S/N? y que no deje de hacerla hasta que el
+        usuario teclee N.</h3>
+    <button onclick="alg10()">Continuar</button>
+
+    <!-- Ejercicio 11 -->
+    <hr>
+    <h3>11) Escribir un programa que reciba una a una las notas del usuario, preguntando a cada paso si desea ingresar más notas, e imprimiendo el promedio correspondiente.</h3>
+    <button onclick="alg11()">Agregar notas</button>
+    <p id="idPfoSalida01" class="result"></p>
+
+    <!-- Ejercicio 12 -->
+    <hr>
+    <h3>12) Escribir un programa que le pida al usuario que ingrese una sucesión de números naturales (primero uno, luego otro, y así hasta que el usuario ingrese -1 como condición de salida). Al final, el programa debe imprimir cuántos números fueron ingresados, la suma total de los valores y el promedio.</h3>
+    <button onclick="alg12()">Agregar notas</button>
+    <p id="resultAlg12_1" class="result">Numeros ingresados = </p>
+    <p id="resultAlg12_2" class="result">Suma total de los valores = </p>
+    <p id="resultAlg12_3" class="result">Promedio = </p>
+
+    <!-- Ejercicio 13 -->
+    <hr>
+    <h3>13)	 Dado un grupo de 20 estudiantes que cursaron la materia Algoritmos, se desea saber cuál es el promedio del grupo, cual fue la nota más alta y cual la más baja.</h3>
+    <button onclick="alg13()">Agregar notas</button>
+    <p id="resultAlg13_1" class="result"></p>
+    <p id="resultAlg13_2" class="result"></p>
+    <p id="resultAlg13_3" class="result">Promedio total = </p>
+
+    <!-- Ejercicio 14 -->
+    <hr>
+    <h3>14)	 Crear un algoritmo que lea un número entero y sume los números comprendidos entre 1 y el número leído inclusive. Ejemplo: el usuario ingresó en número 8, se debe sumar 1+2+3+4+5+6+7+8</h3>
+    <label for="">Escribe un número</label>
+    <br></br>
+    <input type="number" name="" id="num-alg14" onfocus="this.value=''">
+    <button onclick="alg14()">Calcular</button>
+    <p id="resultAlg14_1" class="result"></p>
+    <p id="resultAlg14_1" class="result"></p>
+
+    
+
+    <!-- A partir de aquí van los scrpts -->
+    <script src="main.js" class="result"></script>
+</body>
+
+</html>

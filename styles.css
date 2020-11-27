@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 100px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgb(206, 206, 206);
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 202);
+    color: white;
+}
+
+.result{
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.input-small{
+    width: 100px;
+    margin: 5px;
+}
+
+hr{
+    margin: 50px 0px;
+}
+
+h4{
+    color: rgb(1, 86, 100);
+}
+
+.clPfoSalida {
+    border: 1px solid black;
+    background: rgb(240, 239, 239);
+    padding: 0.5rem;
+}
