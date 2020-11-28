@@ -518,31 +518,95 @@ function alg12() {
 function alg13() {
     let nGrade = 0;
     let nBiggestGrade = 0;
-    let nSmallestGrade = 0;
+    let nSmallestGrade = 1000;
+    let accum = 0;
+    let average = 0;
     document.getElementById("resultAlg13_1").innerHTML = "Nota más alta = ";
     document.getElementById("resultAlg13_2").innerHTML = "Nota más baja = ";
+    document.getElementById("resultAlg13_3").innerHTML = "Promedio total = ";
 
-    for (i=1; i<=3; i++) {
+    for (i=1; i<=20; i++) {
         nGrade = Number((prompt("Ingresa la nota." + " Has ingresado: " + i + " Notas")));
-
+        accum += nGrade;
         if (nGrade > nBiggestGrade) {
             nBiggestGrade = nGrade;
-        }
-        console.log("nota mayor " + nBiggestGrade + "nota " + nGrade)
-
+        } 
         if (nGrade < nSmallestGrade) {
             nSmallestGrade = nGrade;
         }
-        console.log("nota menor " + nSmallestGrade + "nota " + nGrade)
+        console.log("nota menor = " + nSmallestGrade + "/ nota = " + nGrade)
+        console.log("Suma: " + accum)
     }
+
+    average = Math.round((accum / (i-1)) * 10) / 10;
+    
     document.getElementById("resultAlg13_1").innerHTML += nBiggestGrade;
     document.getElementById("resultAlg13_2").innerHTML += nSmallestGrade;
-
+    document.getElementById("resultAlg13_3").innerHTML += average;
 }
 
-    
-    // document.getElementById("resultAlg13_3").innerHTML += average;
 //--------------------Ejercicio 14--------------------
 function alg14() {
-    
+    let accum = 0;
+    let number = Number(document.getElementById("num-alg14").value)
+
+    document.getElementById("resultAlg14_1").innerHTML = "Números a sumar: ";
+    document.getElementById("resultAlg14_2").innerHTML = "Resultado: ";
+
+    for (i=1; i<=number; i++) {
+        accum += i;
+        document.getElementById("resultAlg14_1").innerHTML += (i + " + "); 
+        console.log(accum);
+    }
+    document.getElementById("resultAlg14_2").innerHTML += (accum);
 }
+
+//--------------------Ejercicio 15--------------------
+function alg15(){
+    let number;
+    let accum = 0;
+        for (i=1; i<=10; i++) {
+            number = Number(prompt("Ingresa 10 números. Has escrito: " + i + " números."));
+            document.getElementById("resultAlg15").innerHTML = "La suma de los números negativos es = ";
+
+            if (number < 0) {
+                accum += number;
+                console.log(accum)
+            } else {
+            number = 0;
+            }
+            document.getElementById("resultAlg15").innerHTML += accum; 
+            
+            if (i == 10 && accum == 0) {
+                document.getElementById("resultAlg15").innerHTML = "No ingresaste ningún número negativo.";
+            } 
+        
+        }  
+}
+
+//--------------------Ejercicio 16--------------------
+
+//--------------------Ejercicio 17--------------------
+function alg17() {
+    let accum = 0;
+    let number = Number(document.getElementById("num-alg17").value)
+
+    document.getElementById("resultAlg17").innerHTML = "El resultado es: ";
+
+    for (i=1; i<=number; i++) {
+        accum += i;
+        console.log(accum)
+    }
+    document.getElementById("resultAlg17").innerHTML += (accum);
+}
+
+//--------------------Ejercicio 18--------------------
+//function alg18() {
+    let salary = 1500;
+    let newSalary = 0;
+
+    for (i=1; i<=6; i++) {
+        newSalary += (salary* 0.10);
+        console.log(newSalary)
+    }
+//}
