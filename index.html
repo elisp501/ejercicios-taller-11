@@ -158,8 +158,8 @@
 
     <!-- Ejercicio 16 -->
     <hr>
-    <h3>16) Hacer un programa en C++ que escriba los números del 100 al 1 en pantalla.</h3>
-    <p></p>
+    <h3>16) Hacer un programa que escriba los números del 100 al 1 en pantalla.</h3>
+    <p id="resultAlg16" class="result"></p>
 
 
     <!-- Ejercicio 17 -->
@@ -180,7 +180,133 @@
      <h4>salario ha recibido en cada uno de los 6 años</h4>
      <p id="resultAlg18_2"></p>
 
-    <!-- A partir de aquí van los scrpts -->
+     <!-- Ejercicio 19 -->
+     <hr>
+     <h3>19) “El náufrago satisfecho” ofrece hamburguesas sencillas (S), dobles (D) y triples (T), las cuales tienen un costo de $20, $25 y $28 respectivamente. La empresa acepta tarjetas de crédito con un cargo de 5 % sobre la compra. Suponiendo que los clientes adquieren N hamburguesas, las cuales pueden ser de diferente tipo, realice un algoritmo para determinar cuánto deben pagar.
+    </h3>
+    <label for="">¿Cuantas hamurguesas sencillas deseas?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg19_1" onfocus="this.value=''">
+    <br></br>
+    <label for="">¿Cuantas hamurguesas dobles deseas?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg19_2" onfocus="this.value=''">
+    <br></br>
+    <label for="">¿Cuantas hamurguesas triples deseas?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg19_3" onfocus="this.value=''">
+    <br></br>
+    <button onclick="alg19('TC')">Pagar con tarjeta de crédito</button>
+    <button onclick="alg19('EF')">Pagar con efectivo</button>
+    <br></br>
+    <label for="">El total a pagar es:</label>
+    <p id="resultAlg19" class="result"></p>
+
+    <!-- Ejercicio 20 -->
+    <hr>
+    <h3>20) Una compañía fabrica focos de colores (verdes, blancos y rojos). Se desea contabilizar, de un lote de N focos, el número de focos de cada color que hay en existencia. Desarrolle un algoritmo para determinar esto
+   </h3>
+   <br></br>
+    <label for="">¿Cuantos focos hay en el lote?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg20_1" onfocus="this.value=''">
+    <br></br>
+    <label for="">¿Cuantas focos verdes hay?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg20_2" onfocus="this.value=''">
+    <br></br>
+    <label for="">¿Cuantas focos blancos hay?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg20_3" onfocus="this.value=''">
+    <br></br>
+    <label for="">¿Cuantas focos rojos hay?</label>
+    <br></br>
+    <input type="number" name="" id="num-alg20_4" onfocus="this.value=''">
+    <br></br>
+    <p id="error" class="error"></p>
+    <br></br>
+    <button onclick="alg20()">Verificar</button>
+    <br></br>
+    <label for="">La cantidad de bombillos es:</label>
+    <p id="resultAlg20" class="result"></p>
+    
+    <!-- Ejercicio 21 -->
+    <hr>
+    <h3>21)	 Se requiere un algoritmo para determinar cuánto ahorrará en pesos una persona diariamente, y en un año, si ahorra $3 el primero de enero, $9 el dos de enero, $27 el 3 de enero y así sucesivamente todo el año.
+   </h3>
+   <h4>Ahorro diario</h4>
+   <p id="resultAlg21_1"></p>
+   <br></br>
+   <h4>Ahorro al año</h4>
+   <p id="resultAlg21_2"></p>
+
+   <!-- Ejercicio 22 -->
+   <hr>
+   <h3>22) Los directivos de equis escuela requieren determinar cuál es la edad promedio de cada uno de los M salones y cuál es la edad promedio de toda la escuela. Realice un algoritmo para determinar estos promedios.
+  </h3>
+    <label for="">Promedios de los salones:</label>
+    <p id="resultAlg22_1" class="result"></p>
+    <br></br>
+    <label for="">Promedios de la escuela:</label>
+    <p id="resultAlg22_2" class="result"></p>
+    <br></br>
+  <button onclick="alg22()">Leer edades</button>
+    
+  <!-- Ejercicio 23 -->
+  <hr>
+  <h3>23) Un vendedor ha realizado N ventas y desea saber cuántas fueron por 10,000 o menos, cuántas fueron por más de 10,000 pero por menos de 20,000, y cuánto fue el monto de las ventas de cada una y el monto global. Realice un algoritmo para determinar los totales.
+ </h3>
+ <br></br>
+ <button onclick="alg23()">Agregar ventas</button>
+    <br></br>
+    <label for="">Cantidad de ventas iguales o menores que $10.000:</label>
+    <p id="resultAlg23_1" class="result"></p>
+    <br></br>
+    <label for="">Suma de las ventas iguales o menores que $10.000:</label>
+    <p id="resultAlg23_2" class="result"></p>
+    <br></br>
+    <label for="">Cantidad de ventas mayores que $10.000 y menores que $20.000:</label>
+    <p id="resultAlg23_3" class="result"></p>
+    <br></br>
+    <label for="">Suma de las ventas mayores que $10.000 y menores que $20.000:</label>
+    <p id="resultAlg23_4" class="result"></p>
+    <br></br>
+    <label for="">Monto global:</label>
+    <p id="resultAlg23_5" class="result"></p>
+
+     <!-- Ejercicio 24 -->
+  <hr>
+  <h3>24) Realice un algoritmo que determine el sueldo semanal de N trabajadores (solo es mostrar la suma de todos los sueldos) considerando que se les descuenta 5% de su sueldo si ganan entre 0 y 150 pesos. Se les descuenta 7% si ganan más de 150 pero menos de 300, y 9% si ganan más de 300 pero menos de 450 (nadie gana más de 449). Los datos son horas trabajadas, sueldo por hora y nombre de cada trabajador.
+ </h3>
+ <br></br>
+ <button onclick="alg24()">Calcular sueldo</button>
+ <p id="resultAlg24" class="result"></p>
+
+ <!-- Ejercicio 25 -->
+ <hr>
+ <h3>25) El gerente de una compañía automotriz desea determinar el impuesto que va a pagar por cada uno de los automóviles que posee, además del total que va a pagar por cada categoría y por todos los vehículos, basándose en la siguiente clasificación:
+
+
+    Los vehículos con clave 1 pagan 10% de su valor. 
+    Los vehículos con clave 2 pagan 7% de su valor. 
+    Los vehículos con clave 3 pagan 5% de su valor.
+    
+    Realice un algoritmo para obtener la información y realizar los cálculos.
+    
+</h3>
+<br></br>
+<button onclick="alg25()">Calcular impuestos</button>
+<br></br>
+<label for="">Impuesto por cada automovil</label>
+<p id="resultAlg25_1" class="result"></p>
+<br></br>
+<label for="">Valor total por cada categoría</label>
+<p id="resultAlg25_2" class="result"></p>
+<br></br>
+<label for="">Valor total de todos los vehículos</label>
+<p id="resultAlg25_3" class="result"></p>
+  
+  <!-- A partir de aquí van los scrpts -->
     <script src="main.js" class="result"></script>
 </body>
 
